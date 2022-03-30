@@ -1,0 +1,16 @@
+#Kubernetes Learning
+apiVersion: v1 #project.iacp.io/v1beta1
+kind: Request
+metadata:  
+  name: learning  
+  namespace: learning
+spec:  
+  #user: kavipriya.subramanian@ask.com  
+  #users: [Kavipriya.Subramanian,kavipriya.subramanian,RamuJ,PalaniappanY]  
+  displayName: "My Sample Request"  
+  description: "A simple request example"  
+  quota:    
+    pods: "5"  
+  limits:    
+    cpu: "1"    
+    memory: "800Mi"
